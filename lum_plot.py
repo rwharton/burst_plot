@@ -360,7 +360,7 @@ def make_full_plot():
 
     sgr_y = np.linspace( 0.5 * S_sgr4 * d_sgr4**2., 
                          1.5 * S_sgr1 * d_sgr1**2.0, 100)
-    ax.fill_betweenx(sgr_y, x1=0.5*8e-4, x2=1.5*3e-3, color='k', alpha=0.1)
+    ax.fill_betweenx(sgr_y, x1=6e-4, x2=3e-3, color='k', alpha=0.1)
     
     
     
@@ -468,7 +468,7 @@ def make_full_plot():
 
     # Get B0540 bursts
     wv_B, lum_B = read_B0540('B0540.txt')
-    ax.plot(wv_B, lum_B, ls='', mew=3, marker='+', color='LimeGreen', 
+    ax.plot(wv_B, lum_B, ls='', mew=2, marker='+', color='Orange', 
             ms=15)
 
 
@@ -501,19 +501,19 @@ def make_full_plot():
     ax.text(5e-2, 1e2, "RRATs", fontsize=20, color='r', 
             ha='center', va='center', rotation=0)
     
-    ax.text(1e-5, 4e5, "Crab\nGPs", fontsize=18, color='g', 
+    ax.text(3e-6, 1e7, "Crab\nGPs", fontsize=16, color='g', 
             ha='center', va='center', rotation=0)
     
-    ax.text(1e-8, 3e5, "Crab\nNanoshot", fontsize=18, color='g', 
+    ax.text(1.3e-8, 3e5, "Crab\nNanoshot", fontsize=16, color='g', 
             ha='center', va='center', rotation=0)
     
-    ax.text(5e-7, 1e0, "B1937+21 \n GPs", fontsize=20, color='b', 
+    ax.text(7e-7, 1e0, "B1937+21 \n GPs", fontsize=20, color='b', 
             ha='center', va='center', rotation=0)
 
     #ax.text(2e-7, 3e11, "This Work", fontsize=20, color='r', 
     #        ha='center', va='center', rotation=0)
     
-    ax.text(2e-6, 1e8, "200120E", fontsize=20, color='r', 
+    ax.text(5e-6, 4e11, "200120E", fontsize=20, color='r', 
             ha='center', va='center', rotation=0)
     
     ax.text(8e-5, 1e7, "CHIME", fontsize=14, color='r', 
